@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/formulario.css">
+
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script src="js/jquerry-3.2.1.js"></script>
+	<script src="js/script.js"></script>
+
+	<title>Formulario</title>
+</head>
+<body>
+	  <!-- aqui va el modal-->
+       <!-- <div class="modal_wrap">
+        	<div class="message_modal">
+        		<h3>
+        			Verifique los campos(*)
+        		</h3>
+        		<p>Falta escribir el nombre</p>
+        		<p>Falta escribir el número celular</p>
+        		<p>Falta escribir el correo electronico</p>
+        		<p>Escriba un mensaje</p>
+        		<span id="btnCLOSE">Cerrar</span>
+        		
+        	</div>
+        	
+        </div> -->
+	  <section class="form_wrap">
+	  	<section class="contact_info">
+        <section class="contact_tittle">
+        	<span class="fa fa-user-circle">
+        		<h3>
+        			Para mayor <br> Información
+        		</h3>
+        	</span>
+        </section>
+
+        <section class="info_items">
+        	<p>
+        		<span class="fa fa-envelope">
+        		</span>
+        		fernando.lopezproxx@gmail.com
+        	</p>
+
+        	<p>
+        	<span class="fa fa-mobile">
+        		
+        	</span>	
+        	(722)5059190
+        	</p>
+        </section>
+	  </section>
+
+	  <!--Inicia el formulario-->
+    <form action="enviar.php" method="post" class="form_contact">
+    	<h3>Envia un mensaje</h3>
+    	   <div class="user_info">
+    	   	 <label for="names">
+    	   	 	Nombre(s):*
+    	   	 </label>
+    	   	 <input type="text" id="names" name="nombre" required>
+<!--1-->
+             <label for="phone">
+    	   	 	Teléfono| Celular:*
+    	   	 </label>
+    	   	 <input type="text" id="phone" name="telefono" required>
+<!--2-->
+             <label for="email">
+    	   	 	Correo Electrónico:*
+    	   	 </label>
+    	   	 <input type="text" id="email" name="correo" required>
+<!--3-->
+             <label for="mensaje">
+    	   	 	Mensaje:*
+    	   	 </label>
+    	   	 <textarea id="mensaje" name="mensaje" required>
+    	   	 	
+    	   	 </textarea>
+
+    	   	 <input type="submit" value="Enviar Mensaje" id="btnSend">
+
+    	   </div>
+    	
+    </form>
+</body>
+</html>
